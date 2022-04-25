@@ -1,0 +1,23 @@
+{
+
+    "name" :"miv/gestus_nord",
+    "description" : "gesstus nord plugin",
+    "type" : "project",
+    "license" : "GPL",
+    "authors" : [
+        {
+            "name" : "Netkravler",
+            "email": "miv@netkravler.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "phpmailer/phpmailer": "dev-master",
+        "matomo/device-detector": "dev-master"
+    },
+    "autoload": {
+    
+        "psr-4": {"Inc\\" : "./inc"}
+    }
+    
+    }

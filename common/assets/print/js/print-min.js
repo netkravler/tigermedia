@@ -1,0 +1,1 @@
+function printDiv(n,e){var t=document.getElementById(n).innerHTML,d=document.body.innerHTML;document.body.innerHTML="<html><head><title></title></head><body><h1>"+e+"</h1>"+t+"</body></html>",window.print(),document.body.innerHTML=d}

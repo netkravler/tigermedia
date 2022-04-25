@@ -1,0 +1,193 @@
+[
+    {
+        "name": "matomo/device-detector",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/matomo-org/device-detector.git",
+            "reference": "a892daf88b1f849cdb4b474dfda27bc8b6f941f4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/matomo-org/device-detector/zipball/a892daf88b1f849cdb4b474dfda27bc8b6f941f4",
+            "reference": "a892daf88b1f849cdb4b474dfda27bc8b6f941f4",
+            "shasum": ""
+        },
+        "require": {
+            "mustangostang/spyc": "*",
+            "php": ">=7.2"
+        },
+        "replace": {
+            "piwik/device-detector": "self.version"
+        },
+        "require-dev": {
+            "matthiasmullie/scrapbook": "@stable",
+            "mayflower/mo4-coding-standard": "dev-master#275cb9d",
+            "phpstan/phpstan": "^0.12.52",
+            "phpunit/phpunit": "^8.5.8",
+            "psr/cache": "^1.0.1",
+            "psr/simple-cache": "^1.0.1",
+            "symfony/yaml": "^5.1.7"
+        },
+        "suggest": {
+            "doctrine/cache": "Can directly be used for caching purpose",
+            "ext-yaml": "Necessary for using the Pecl YAML parser"
+        },
+        "time": "2020-12-04T17:28:51+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "DeviceDetector\\": ""
+            },
+            "exclude-from-classmap": [
+                "Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL-3.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "The Matomo Team",
+                "email": "hello@matomo.org",
+                "homepage": "https://matomo.org/team/"
+            }
+        ],
+        "description": "The Universal Device Detection library, that parses User Agents and detects devices (desktop, tablet, mobile, tv, cars, console, etc.), clients (browsers, media players, mobile apps, feed readers, libraries, etc), operating systems, devices, brands and models.",
+        "homepage": "https://matomo.org",
+        "keywords": [
+            "devicedetection",
+            "parser",
+            "useragent"
+        ]
+    },
+    {
+        "name": "mustangostang/spyc",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mustangostang/spyc.git",
+            "reference": "daf9fa4ef675519386b4f556c9d5ab5f9c14055a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/mustangostang/spyc/zipball/daf9fa4ef675519386b4f556c9d5ab5f9c14055a",
+            "reference": "daf9fa4ef675519386b4f556c9d5ab5f9c14055a",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.1"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "4.3.*@dev"
+        },
+        "time": "2019-12-03T17:11:33+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "0.5.x-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "files": [
+                "Spyc.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "mustangostang",
+                "email": "vlad.andersen@gmail.com"
+            }
+        ],
+        "description": "A simple YAML loader/dumper class for PHP",
+        "homepage": "https://github.com/mustangostang/spyc/",
+        "keywords": [
+            "spyc",
+            "yaml",
+            "yml"
+        ]
+    },
+    {
+        "name": "phpmailer/phpmailer",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/PHPMailer/PHPMailer.git",
+            "reference": "a2e5e89925853e9938299ba456cd4e168a3c8ac4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/a2e5e89925853e9938299ba456cd4e168a3c8ac4",
+            "reference": "a2e5e89925853e9938299ba456cd4e168a3c8ac4",
+            "shasum": ""
+        },
+        "require": {
+            "ext-ctype": "*",
+            "ext-filter": "*",
+            "ext-hash": "*",
+            "php": ">=5.5.0"
+        },
+        "require-dev": {
+            "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+            "doctrine/annotations": "^1.2",
+            "phpcompatibility/php-compatibility": "^9.3.5",
+            "phpunit/phpunit": "^4.8 || ^5.7",
+            "roave/security-advisories": "dev-latest",
+            "squizlabs/php_codesniffer": "^3.5.6"
+        },
+        "suggest": {
+            "ext-mbstring": "Needed to send email in multibyte encoding charset",
+            "hayageek/oauth2-yahoo": "Needed for Yahoo XOAUTH2 authentication",
+            "league/oauth2-google": "Needed for Google XOAUTH2 authentication",
+            "psr/log": "For optional PSR-3 debug logging",
+            "stevenmaguire/oauth2-microsoft": "Needed for Microsoft XOAUTH2 authentication",
+            "symfony/polyfill-mbstring": "To support UTF-8 if the Mbstring PHP extension is not enabled (^1.2)"
+        },
+        "time": "2020-11-07T14:57:24+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "PHPMailer\\PHPMailer\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL-2.1-only"
+        ],
+        "authors": [
+            {
+                "name": "Marcus Bointon",
+                "email": "phpmailer@synchromedia.co.uk"
+            },
+            {
+                "name": "Jim Jagielski",
+                "email": "jimjag@gmail.com"
+            },
+            {
+                "name": "Andy Prevost",
+                "email": "codeworxtech@users.sourceforge.net"
+            },
+            {
+                "name": "Brent R. Matzelle"
+            }
+        ],
+        "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
+        "funding": [
+            {
+                "url": "https://github.com/Synchro",
+                "type": "github"
+            }
+        ]
+    }
+]
